@@ -1,0 +1,40 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#gallery{
+  height: 400px;
+  width: 100%;
+  background: grey;
+}
+
+#description{
+  background:rgb(255, 146, 146);
+  height: 300px;
+}
+
+#reviews{
+  background:rgb(154, 230, 253);
+  height: 600px;
+}
+
+#booking{
+  position: fixed;
+  top: 430px;
+  right: 1.75%;
+  background: purple;
+  height: 250px;
+  width: 30%;
+  padding: 0;
+}
+
+@media(max-width: 1200px){
+  #booking{
+    top: inherit;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+  }
+}

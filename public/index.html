@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link href="styles.css" rel="stylesheet">
-    <title>FEC Demo</title>
-  </head>
-  <body>
-    <div id="gallery"></div>
-    <script src="/lib/react.development.js"></script>
-    <script src="/lib/react-dom.development.js"></script>
-    <!-- <script src="http://localhost:3001/app.js"></script> -->
-    <script src="http://localhost:3002/app.js"></script>
-    <!-- <script src="http://localhost:3003/app.js"></script>
-    <script src="http://localhost:3004/app.js"></script> -->
-    <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
-    <script>
-      ReactDOM.render(
-        React.createElement(PhotoService),
-        document.getElementById('gallery')
-      );
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <title>Proxy</title>
+
+</head>
+<body>
+
+  <div id="gallery">
+  </div>
+
+  <div class="row ">
+      <div id="details" class="col-lg-offset-2 col-lg-6 col-xs-6">
+
+      </div>
+  </div>
+
+  <div class="row">
+      <div id="reviews" class="col-lg-offset-2 col-lg-6 col-xs-6">
+
+      </div>
+  </div>
+
+  <div id="booking">
+
+  </div>
+
+  <script src="http://booking-dev2.us-west-1.elasticbeanstalk.com/app.js"></script>
+  <script src="http://rooms.4gk2mkr3wk.us-west-2.elasticbeanstalk.com/app.js"></script>
+  <script src="http://photos.urvjp33d4m.us-west-2.elasticbeanstalk.com/app.js"></script>
+  <script src="http://firebnb-reviews.8di9c2yryn.us-east-1.elasticbeanstalk.com/app.js"></script>
+</body>
+
 </html>
